@@ -1,0 +1,35 @@
+# MyApp — Claude Code project memory
+# (Example file. Copy to your repo root as CLAUDE.md and edit. No real secrets here — ever.)
+
+## Commands
+- Install: `pnpm install` (pnpm ONLY — never npm/yarn)
+- Dev server: `pnpm dev` (http://localhost:3000)
+- Test all: `pnpm test` · single: `pnpm test -- -t "name"`
+- Lint + types: `pnpm lint && pnpm typecheck` — both must pass before any commit
+- NEVER run `pnpm deploy` — CI owns deployment
+
+## Architecture
+- `apps/web` — Next.js frontend
+- `apps/api` — Fastify backend; all routes in `apps/api/src/routes/`
+- `packages/db` — Prisma; ALL database access goes through repositories here
+- `packages/shared` — types/utils shared by web and api
+
+## Conventions
+- TypeScript strict mode; no `any` without an inline justification comment
+- Errors: throw `AppError` subclasses (`packages/shared/errors.ts`), never strings
+- Tests colocated: `foo.ts` → `foo.test.ts`; test behavior, not implementation
+- Commits: conventional (`feat:`, `fix:`, `chore:`), imperative mood, say WHY
+
+## Environment
+- Secrets come from `.env` (git-ignored). Reference as `$VAR_NAME`; never print values.
+- Staging API: `https://staging.example.com` with `Authorization: Bearer $STAGING_TOKEN`
+- The staging DB is shared with the team — no destructive migrations against it
+
+## Gotchas
+- `apps/api` requires Node 20 (breaks on 22) — `.nvmrc` is authoritative
+- `packages/db` schema changes need `pnpm db:generate` before types resolve
+- E2E tests need the dev server already running
+
+## More context (loaded on demand)
+- Service topology: @docs/architecture.md
+- API style guide: @docs/api-style.md
