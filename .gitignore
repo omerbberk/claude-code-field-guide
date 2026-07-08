@@ -1,0 +1,18 @@
+# OS noise
+.DS_Store
+Thumbs.db
+
+# editors
+.idea/
+.vscode/
+*.swp
+
+# just in case — this repo must never contain env files
+.env
+.env.*
+*.pem
+*.key
+
+# local-only Claude Code state
+.claude/settings.local.json
+CLAUDE.local.md
