@@ -56,6 +56,10 @@ First run walks you through login (Claude Pro/Max subscription or an API key). T
 | 12 | [Agents & Delegation](docs/12-agents-and-delegation.md) | Subagents, roles, and working like a tech lead |
 | 13 | [Token Efficiency](docs/13-token-efficiency.md) | More work per token — for subscriptions and API alike |
 
+## Community recipes
+
+[`recipes/`](recipes/) is a cookbook of short, real workflows from users — and the easiest place to make your first contribution: **one file, one recipe, one PR** ([template here](recipes/_template.md)).
+
 ## Ready-to-use examples
 
 The [`examples/`](examples/) folder contains files you can drop straight into your own projects:
@@ -76,6 +80,14 @@ The [`examples/`](examples/) folder contains files you can drop straight into yo
 ## Contributing
 
 Found a mistake? Have a workflow worth sharing? PRs are very welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). This guide gets better with real-world recipes from real users.
+
+**Currently looking for** (see [open issues](../../issues) for details):
+
+- Recipes for `recipes/` — any workflow you actually use ([template](recipes/_template.md))
+- A Windows-specific chapter (native vs WSL gotchas)
+- A Plugins chapter (`/plugin`, marketplaces)
+- A dedicated Troubleshooting & FAQ chapter
+- Corrections — Claude Code moves fast; stale docs reported or fixed are gold
 
 ## License
 
