@@ -1,5 +1,7 @@
 # 9. Automation & Headless Mode
 
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+
 Everything so far assumed you at a keyboard. This chapter removes you from the loop: scripts, CI, scheduled jobs, and bots built on Claude Code.
 
 ## Print mode: `claude -p`

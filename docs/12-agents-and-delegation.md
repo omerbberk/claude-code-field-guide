@@ -1,5 +1,7 @@
 # 12. Agents & Delegation — Working Like a Tech Lead
 
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+
 The mental shift that unlocks serious throughput: stop thinking "I have an AI assistant" and start thinking "I lead a small team of agents." This chapter is about who the team members are and which tasks to hand to whom.
 
 ## The cast
