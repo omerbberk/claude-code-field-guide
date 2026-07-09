@@ -2,6 +2,8 @@
 
 **A practical, no-fluff field guide to Claude Code — the AI coding agent that lives in your terminal.**
 
+🌍 English · [Türkçe](translations/tr/README.md) · [add your language](translations/README.md)
+
 This repo is written for people who want to go beyond "chat with an AI" and actually *work* with one: refactor real codebases, automate boring chores, wire it into your tools, and build workflows that stick.
 
 > Everything here uses placeholder values (`YOUR_API_KEY`, `your-project`, etc.). Never commit real secrets — see [Security](docs/11-security-best-practices.md).
@@ -84,6 +86,8 @@ Found a mistake? Have a workflow worth sharing? PRs are very welcome — see [CO
 **Currently looking for** (see [open issues](../../issues) for details):
 
 - Recipes for `recipes/` — any workflow you actually use ([template](recipes/_template.md))
+- Translations — Türkçe is started; any language welcome ([how](translations/README.md))
+- Chapter re-verification — check a chapter against the current release and bump its "Last verified" banner
 - A Windows-specific chapter (native vs WSL gotchas)
 - A Plugins chapter (`/plugin`, marketplaces)
 - A dedicated Troubleshooting & FAQ chapter
