@@ -48,7 +48,7 @@ git diff --cached | claude -p "any obvious bugs or leaked secrets in this diff? 
 
 ## GitHub Actions
 
-The official action (`anthropics/claude-code-action`) turns `@claude` mentions into working PRs:
+The official action (`anthropics/claude-code-action`) turns `@claude` mentions into working PRs. Easiest setup: run `/install-github-app` inside Claude Code — it walks you through the GitHub app and secrets. Or wire it manually:
 
 ```yaml
 # .github/workflows/claude.yml

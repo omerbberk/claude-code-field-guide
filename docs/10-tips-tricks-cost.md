@@ -16,7 +16,7 @@ The unglamorous habits that separate "I tried it" from "it changed how I work."
 
 - `/clear` between unrelated tasks — the single most impactful habit.
 - `/compact` when a long session starts feeling dull or slow; the model summarizes and continues.
-- Rewind with double-`Esc` when a thread went wrong — often better than arguing with a bad approach.
+- Rewind with double-`Esc` (or `/rewind`) when a thread went wrong — checkpoints can restore the *code* too, so it beats arguing with a bad approach.
 - Long-running work? Kick it off, and let a `Notification` hook ping you ([chapter 6](06-hooks.md)) instead of watching it scroll.
 
 ## Speed & throughput
@@ -38,7 +38,7 @@ Subscription users (Pro/Max) mostly need usage awareness — limits reset every 
 | Extended thinking everywhere | reserve "think hard" for genuinely hard problems |
 | Fat CLAUDE.md + 15 MCP servers | prune both — they're loaded every session |
 
-Check `/cost` per session (API), or your plan's usage page (subscription). For headless bulk work, Haiku-class models are absurdly cost-effective.
+Check `/usage` for plan limits and per-session cost (`/cost` is an alias), and `/context` to see *what* is eating your context window. For headless bulk work, Haiku-class models are absurdly cost-effective.
 
 ## Quality-of-life settings
 

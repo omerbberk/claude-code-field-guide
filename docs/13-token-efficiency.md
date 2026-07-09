@@ -51,7 +51,7 @@ These load **every session**, forever, in every conversation:
 - **CLAUDE.md** — keep it dense; link with `@docs/...` instead of inlining; prune dead rules quarterly ([chapter 4](04-context-claude-md-memory.md)).
 - **MCP servers** — every connected server injects its tool definitions. Disconnect the ones you stopped using ([chapter 7](07-mcp-integrations.md)).
 
-A bloated CLAUDE.md plus ten idle MCP servers can consume a meaningful slice of your context before you've typed a word.
+A bloated CLAUDE.md plus ten idle MCP servers can consume a meaningful slice of your context before you've typed a word. Run `/context` to see exactly what's occupying it — the fixed overhead is visible, not hypothetical.
 
 ## `/compact` vs `/clear`
 
@@ -90,7 +90,7 @@ Fewer, richer instructions — each turn you save is an entire context re-read y
 - **Prompt caching** makes repeated context (system prompt, CLAUDE.md) dramatically cheaper on consecutive calls within the cache window — rapid iteration is cheaper than sporadic pokes.
 - `--max-turns` caps runaway loops; `--allowedTools` prevents wandering.
 - Bulk jobs (triage, classification, lint-ish sweeps): Haiku + tight prompts + `--output-format json`.
-- Check `/cost` per session; on the API, read the per-run cost in the JSON result metadata and graph it over time — regressions in your automation show up as cost spikes.
+- Check `/usage` per session; on the API, read the per-run cost in the JSON result metadata and graph it over time — regressions in your automation show up as cost spikes.
 
 ## The paradox worth internalizing
 

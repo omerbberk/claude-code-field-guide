@@ -15,14 +15,18 @@ Slash commands are how you trigger packaged behavior. Some are built in; the int
 | `/agents` | Manage subagents |
 | `/hooks` | Configure hooks interactively |
 | `/config` | Settings (theme, notifications, …) |
-| `/review` | Review a pull request |
-| `/cost` | Token/cost usage for the session |
+| `/review` | Quick read-only review of a GitHub PR |
+| `/code-review` | Deeper diff review (supports `--fix` to apply findings) |
+| `/rewind` | Roll conversation *and code* back to a checkpoint |
+| `/context` | Visualize what's filling your context window |
+| `/usage` | Plan limits & token/cost usage (`/cost` is an alias) |
+| `/plugin` | Manage plugins (bundles of skills/agents/hooks) |
 | `/doctor` | Diagnose installation issues |
 | `/vim` | Vim keybindings, if that's your thing |
 
 ## Custom skills: package a workflow
 
-A **skill** is a folder with a `SKILL.md` file: instructions + optional metadata that Claude loads when you invoke it (or when it detects the skill is relevant). Project skills live in `.claude/skills/`, personal ones in `~/.claude/skills/`.
+A **skill** is a folder with a `SKILL.md` file: instructions + optional metadata that Claude loads when you invoke it (or when it detects the skill is relevant). Project skills live in `.claude/skills/`, personal ones in `~/.claude/skills/`. (Older-style custom commands in `.claude/commands/*.md` still work — commands were merged into skills.)
 
 ```
 .claude/skills/
