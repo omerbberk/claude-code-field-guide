@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 Official Claude Code docs
+    url: https://code.claude.com/docs
+    about: For questions about Claude Code itself (not this guide), the official docs are the source of truth.

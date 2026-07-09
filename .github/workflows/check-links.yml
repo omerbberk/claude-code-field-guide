@@ -1,0 +1,18 @@
+name: Check links
+
+on:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC — catches docs that go stale on their own
+  workflow_dispatch:
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check markdown links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --exclude-mail './**/*.md'
+          fail: true
