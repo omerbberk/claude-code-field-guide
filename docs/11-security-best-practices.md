@@ -79,7 +79,26 @@ The name is honest. Rules of engagement:
 - ✅ CI runners with scoped, short-lived tokens
 - ❌ Your laptop, your dotfiles, anything with your SSH keys in reach
 
-If you want speed on your own machine, the answer is a well-tuned allowlist + auto-accept edits mode — not YOLO.
+If you want speed on your own machine, the answer is a well-tuned allowlist + auto-accept edits mode — or better, the built-in sandbox below. Not YOLO.
+
+## The sandbox: fewer prompts *and* more safety
+
+Permission prompts ask you to predict what a command will do. The **sandboxed Bash tool** flips that: the OS itself enforces what commands *can* do, so most of them can run without asking at all. Run `/sandbox` in a session to turn it on (macOS uses the built-in Seatbelt framework; Linux/WSL2 need `bubblewrap` + `socat`; native Windows isn't supported).
+
+What the boundary looks like:
+
+- **Filesystem**: commands can write only to the working directory and the session temp dir. Your `~/.bashrc`, system binaries, other projects — untouchable, even by child processes.
+- **Network**: no domains are pre-allowed; the first request to a new domain prompts you once, and you can pre-allow the usual suspects (`registry.npmjs.org`, `github.com`, …) in settings.
+- **Escape hatch**: commands that genuinely can't run sandboxed fall back to the normal permission flow — you still decide.
+
+In *auto-allow* mode this means `npm test`, builds, greps, formatters, and most of what an agent does all day just run — no prompt fatigue, no YOLO. Deny rules are still respected, and scary commands (`rm` against `/` or `$HOME`, `git push` if you ask-rule it) still stop and ask.
+
+Two honest caveats:
+
+1. **Reads are broad by default** — the sandbox blocks writes, but a sandboxed command can still *read* `~/.ssh` or `~/.aws/credentials` unless you block them. Add them to `sandbox.credentials` (or `denyRead`) — pair this with the deny rules from the secrets section above.
+2. **It's a strong boundary, not a perfect one** — network filtering is by hostname, without inspecting TLS. For truly unattended runs on untrusted input, a container/VM is still the answer.
+
+Configuration lives in `settings.json` under a `sandbox` key; the [official sandboxing docs](https://code.claude.com/docs/en/sandboxing) cover the full reference.
 
 ## Prompt injection: the threat model worth knowing
 
