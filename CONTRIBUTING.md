@@ -5,7 +5,7 @@ This guide gets better with real-world experience — especially **yours**. You 
 ## Easiest ways to contribute
 
 1. **Share a recipe.** A prompt pattern, a hook, a skill, an MCP setup, an Obsidian workflow — anything you actually use. Drop a single file into [`recipes/`](recipes/) (copy [`_template.md`](recipes/_template.md)), or add it to the relevant chapter or `examples/`.
-2. **Fix something wrong or stale.** Claude Code evolves fast; if a command or behavior described here has changed, a small correcting PR is gold.
+2. **Fix something wrong or stale.** Claude Code evolves fast; if a command or behavior described here has changed, a small correcting PR is gold. Each chapter carries a **"Last verified: vX.Y.Z"** banner — re-checking a chapter against the current release and bumping that banner (fixing whatever drifted) is a complete, valued contribution on its own.
 3. **Improve clarity.** If a section confused you, it confuses others. Rewrites welcome.
 4. **Translate nothing, simplify instead.** The repo stays English-only for now; PRs that simplify language help non-native readers most.
 5. **Open an issue** if you don't have time for a PR — "this didn't work for me on Windows" is a valuable contribution too.

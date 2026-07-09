@@ -1,5 +1,7 @@
 # 1. Getting Started
 
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+
 ## Installation
 
 **Requirements:** macOS, Linux, or Windows (native or WSL). No Node.js needed for the native installer; the npm path needs Node 22+.

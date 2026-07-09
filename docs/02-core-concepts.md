@@ -1,5 +1,7 @@
 # 2. Core Concepts — How It Actually Works
 
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+
 Understanding the machinery makes you dramatically better at using it. Claude Code is not magic; it's a well-designed loop.
 
 ## The agent loop

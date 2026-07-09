@@ -1,5 +1,7 @@
 # 10. Tips, Tricks & Cost Control
 
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+
 The unglamorous habits that separate "I tried it" from "it changed how I work."
 
 ## Prompting tips that actually move the needle
