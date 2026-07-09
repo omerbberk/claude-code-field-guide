@@ -4,6 +4,8 @@ CLAUDE.md says "please format code after editing". A hook **guarantees** it. Hoo
 
 ## Hook events
 
+The most-used events (the full list is much longer — `SessionEnd`, `PreCompact`, `SubagentStop`, `PermissionRequest`, and more; see the [official hooks reference](https://code.claude.com/docs/en/hooks)):
+
 | Event | Fires | Classic use |
 |---|---|---|
 | `PreToolUse` | before a tool call; **can block it** | guard protected files, lint the command |

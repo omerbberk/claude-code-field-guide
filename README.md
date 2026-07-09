@@ -22,8 +22,8 @@ It's available as a terminal CLI, a desktop app, a web app, and IDE extensions (
 ## Quick start (60 seconds)
 
 ```bash
-# Install (macOS / Linux / WSL)
-npm install -g @anthropic-ai/claude-code
+# Install (macOS / Linux / WSL — Windows PowerShell: irm https://claude.ai/install.ps1 | iex)
+curl -fsSL https://claude.ai/install.sh | bash
 
 # Go to any project and start
 cd your-project
