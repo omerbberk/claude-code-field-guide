@@ -1,6 +1,6 @@
 # 3. Everyday Workflows
 
-> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/claude-code-field-guide/issues) — re-verifying a chapter is a great first PR.
 
 Real recipes, in roughly the order you'll need them. Each shows the *shape* of a good prompt — adapt freely.
 

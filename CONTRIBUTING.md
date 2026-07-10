@@ -38,8 +38,8 @@ Keep prompts real — the exact shape you'd actually type, with placeholder name
 There's nothing to build — it's all markdown.
 
 ```bash
-git clone https://github.com/omerbberk/how-it-works.git
-cd how-it-works
+git clone https://github.com/omerbberk/claude-code-field-guide.git
+cd claude-code-field-guide
 # edit, then open a PR against main
 ```
 

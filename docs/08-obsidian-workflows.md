@@ -1,6 +1,6 @@
 # 8. Obsidian Workflows — Your Vault as an Agent's Knowledge Base
 
-> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/claude-code-field-guide/issues) — re-verifying a chapter is a great first PR.
 
 An Obsidian vault is just a folder of markdown files. Claude Code's native tools — read, write, grep, glob — happen to be *perfect* for folders of markdown files. No plugins required, no sync services: run the agent inside the vault.
 

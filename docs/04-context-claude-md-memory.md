@@ -1,6 +1,6 @@
 # 4. CLAUDE.md & Memory — Teach It Once
 
-> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/claude-code-field-guide/issues) — re-verifying a chapter is a great first PR.
 
 If you find yourself telling Claude the same thing twice, that thing belongs in a file. This chapter is the highest ROI in the whole guide.
 

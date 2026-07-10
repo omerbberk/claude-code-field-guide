@@ -1,6 +1,6 @@
 # 11. Security Best Practices
 
-> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/claude-code-field-guide/issues) — re-verifying a chapter is a great first PR.
 
 An agent that can edit files and run commands deserves the same respect as any powerful tool. None of this is scary; all of it is worth doing.
 
