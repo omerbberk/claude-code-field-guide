@@ -85,7 +85,7 @@ The [`examples/`](examples/) folder contains files you can drop straight into yo
 
 Found a mistake? Have a workflow worth sharing? PRs are very welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). This guide gets better with real-world recipes from real users.
 
-**Currently looking for** (see [open issues](../../issues) for details):
+**Currently looking for** (see [open issues](https://github.com/omerbberk/claude-code-field-guide/issues) for details):
 
 - Recipes for `recipes/` — any workflow you actually use ([template](recipes/_template.md))
 - Translations — Türkçe is started; any language welcome ([how](translations/README.md))
