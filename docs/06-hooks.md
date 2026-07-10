@@ -1,6 +1,6 @@
 # 6. Hooks — Deterministic Automation
 
-> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/claude-code-field-guide/issues) — re-verifying a chapter is a great first PR.
 
 CLAUDE.md says "please format code after editing". A hook **guarantees** it. Hooks are shell commands the harness itself runs at fixed points in the agent's lifecycle — the model can't forget them, skip them, or be talked out of them.
 

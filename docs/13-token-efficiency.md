@@ -1,6 +1,6 @@
 # 13. Token Efficiency — More Work per Token
 
-> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/claude-code-field-guide/issues) — re-verifying a chapter is a great first PR.
 
 Whether you're on a subscription (usage limits) or the API (per-token billing), the currency is the same: **tokens**. The good news: almost everything that saves tokens also makes the agent *smarter*, because the real enemy is context pollution, and pollution costs both money and quality.
 

@@ -95,6 +95,8 @@ Found a mistake? Have a workflow worth sharing? PRs are very welcome — see [CO
 - A dedicated Troubleshooting & FAQ chapter
 - Corrections — Claude Code moves fast; stale docs reported or fixed are gold
 
-## License
+## License & disclaimer
 
 [MIT](LICENSE) — use anything here freely.
+
+This is an **unofficial community guide**, not affiliated with or endorsed by Anthropic. *Claude* and *Claude Code* are trademarks of Anthropic, PBC. For authoritative reference, see the [official documentation](https://code.claude.com/docs).

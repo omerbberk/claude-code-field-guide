@@ -1,6 +1,6 @@
 # 5. Slash Commands & Skills
 
-> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/claude-code-field-guide/issues) — re-verifying a chapter is a great first PR.
 
 Slash commands are how you trigger packaged behavior. Some are built in; the interesting part is writing your own.
 

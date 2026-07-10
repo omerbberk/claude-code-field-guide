@@ -1,6 +1,6 @@
 # 7. MCP & Integrations — What Should I Connect?
 
-> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/how-it-works/issues) — re-verifying a chapter is a great first PR.
+> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/claude-code-field-guide/issues) — re-verifying a chapter is a great first PR.
 
 Out of the box, Claude Code can touch anything reachable from your shell. **MCP (Model Context Protocol)** extends that: servers that give the agent new tools — query a database, drive a browser, read your issue tracker.
 
