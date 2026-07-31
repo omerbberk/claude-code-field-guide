@@ -59,6 +59,7 @@ First run walks you through login (Claude Pro/Max subscription or an API key). T
 | 11 | [Security Best Practices](docs/11-security-best-practices.md) | Secrets, permissions, and staying safe |
 | 12 | [Agents & Delegation](docs/12-agents-and-delegation.md) | Subagents, roles, and working like a tech lead |
 | 13 | [Token Efficiency](docs/13-token-efficiency.md) | More work per token — for subscriptions and API alike |
+| 14 | [Troubleshooting & FAQ](docs/14-troubleshooting.md) | Symptom → cause → fix, grouped by area |
 
 ## Community recipes
 
@@ -92,7 +93,6 @@ Found a mistake? Have a workflow worth sharing? PRs are very welcome — see [CO
 - Chapter re-verification — check a chapter against the current release and bump its "Last verified" banner
 - A Windows-specific chapter (native vs WSL gotchas)
 - A Plugins chapter (`/plugin`, marketplaces)
-- A dedicated Troubleshooting & FAQ chapter
 - Corrections — Claude Code moves fast; stale docs reported or fixed are gold
 
 ## License & disclaimer

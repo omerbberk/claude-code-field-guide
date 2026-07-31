@@ -100,4 +100,10 @@ Token-efficient usage isn't ascetic usage. The goal is **spending tokens where t
 
 ---
 
-*End of the guide's core chapters. Drop-in configs live in [`examples/`](../examples/) — and if you've developed a token-saving trick not listed here, [PRs are welcome](../CONTRIBUTING.md).*
+## Next
+
+→ [Chapter 14: Troubleshooting & FAQ](14-troubleshooting.md) — symptom → cause → fix, grouped by area.
+
+---
+
+*Drop-in configs live in [`examples/`](../examples/) — and if you've developed a token-saving trick not listed here, [PRs are welcome](../CONTRIBUTING.md).*

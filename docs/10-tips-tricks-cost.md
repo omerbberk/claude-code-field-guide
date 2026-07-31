@@ -52,6 +52,8 @@ Check `/usage` for plan limits and per-session cost (`/cost` is an alias), and `
 
 ## Troubleshooting
 
+Quick hits below; the full symptom → cause → fix reference (install/auth, permissions, context, MCP, IDE) lives in [Chapter 14](14-troubleshooting.md).
+
 | Symptom | Fix |
 |---|---|
 | Claude "forgot" a rule you told it | It's in chat history, not memory — `#` it into CLAUDE.md |
