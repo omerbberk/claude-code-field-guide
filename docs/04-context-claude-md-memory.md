@@ -29,6 +29,21 @@ Claude merges CLAUDE.md files from several levels, most specific last:
 
 Monorepo tip: a small `CLAUDE.md` per package beats one giant root file.
 
+## CLAUDE.md vs `.claude/rules/*.md` vs auto-memory
+
+CLAUDE.md isn't the only place Claude Code stores what it knows about your project. Three mechanisms now overlap, and picking the right one keeps context lean instead of bloated with everything, always, everywhere.
+
+| | CLAUDE.md | `.claude/rules/*.md` | Auto-memory |
+|---|---|---|---|
+| **Written by** | You, deliberately | You, deliberately | Claude, automatically during sessions |
+| **Loaded** | Always, every session | Always, or scoped by path/glob if the rule declares one | When Claude judges it relevant |
+| **Best for** | Small, load-bearing core: commands, architecture, hard constraints | Larger rule sets split by area (`frontend.md`, `db-migrations.md`) so unrelated work doesn't pay their context cost | Things learned mid-session you didn't write down — a debugging insight, a preference you stated once |
+| **Review** | Commit, review diffs in PR | Commit, review diffs in PR | Inspect and prune with `/memory` |
+
+Rough rule of thumb: if it's a permanent, non-negotiable fact about the project, it belongs in **CLAUDE.md**. If it's a real rule set but only relevant to one part of the codebase, split it into **`.claude/rules/`** so it's not dead weight everywhere else. If it's something Claude picked up on its own that you haven't consciously curated yet, it's sitting in **auto-memory** — run `/memory` periodically to see what's accumulated there and promote anything durable into CLAUDE.md or a rules file, the same way you'd `#`-save a correction (see below).
+
+None of this replaces the `#` shortcut or the hierarchy above — auto-memory and `.claude/rules/` are additional storage tiers, not a different system. The mental model stays the same: the more permanent and universal a fact is, the higher up it should live.
+
 ## What good CLAUDE.md content looks like
 
 Dense, factual, imperative. It's loaded every session, so every line costs context — make each one earn its place.
