@@ -2,7 +2,7 @@
 
 **A practical, no-fluff field guide to Claude Code — the AI coding agent that lives in your terminal.**
 
-🌍 English · [Türkçe](translations/tr/README.md) · [add your language](translations/README.md)
+🌍 English · [Türkçe](translations/tr/README.md) · [中文](translations/zh/README.md) · [add your language](translations/README.md) 
 
 This repo is written for people who want to go beyond "chat with an AI" and actually *work* with one: refactor real codebases, automate boring chores, wire it into your tools, and build workflows that stick.
 

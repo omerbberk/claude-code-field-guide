@@ -5,9 +5,9 @@ The guide's source of truth is the English version in [`docs/`](../docs/). Trans
 ```
 translations/
   tr/    # Türkçe — started
+  zh/    # 中文 — started
   es/    # Español — wanted
   pt/    # Português — wanted
-  zh/    # 中文 — wanted
   ...    # your language here
 ```
 
@@ -28,3 +28,4 @@ Want to be the go-to reviewer for your language? Open an issue and say so — we
 | Language | Status | Maintainer |
 |---|---|---|
 | Türkçe (tr) | README done, chapters welcome | — |
+| 中文 (zh) | README done, chapters welcome | — |
