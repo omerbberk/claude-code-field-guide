@@ -40,7 +40,7 @@ First run walks you through login (Claude Pro/Max subscription or an API key). T
 > run the tests and fix any failures
 ```
 
-**In a hurry?** The [one-page cheatsheet](CHEATSHEET.md) has every key, command, and pattern.
+**In a hurry?** The [one-page cheatsheet](CHEATSHEET.md) has every key, command, and pattern. New to the terms? Check the [glossary](GLOSSARY.md).
 
 ## Table of contents
 
