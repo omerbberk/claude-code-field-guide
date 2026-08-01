@@ -1,6 +1,6 @@
 # 9. Automation & Headless Mode
 
-> **Last verified:** Claude Code v2.1.205 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/claude-code-field-guide/issues) — re-verifying a chapter is a great first PR.
+> **Last verified:** Claude Code v2.1.220 · July 2026. Behavior changed since? [Report it](https://github.com/omerbberk/claude-code-field-guide/issues) — re-verifying a chapter is a great first PR.
 
 Everything so far assumed you at a keyboard. This chapter removes you from the loop: scripts, CI, scheduled jobs, and bots built on Claude Code.
 
@@ -28,8 +28,7 @@ Useful flags for headless runs:
 | `--output-format json` | machine-readable result (includes cost/duration metadata) |
 | `--allowedTools "Read,Grep,Bash(git log:*)"` | explicit tool whitelist for this run |
 | `--max-turns 10` | hard cap on agent loop iterations |
-| `--model claude-haiku-4-5` | cheap model for bulk jobs |
-| `--append-system-prompt "..."` | extra standing instructions |
+| `--model haiku` | cheap model for bulk jobs (durable alias — resolves to the current Haiku release; pin `claude-haiku-4-5-20251001` if you need a fixed version) || `--append-system-prompt "..."` | extra standing instructions |
 
 **Permissions are the crux:** headless runs can't ask you anything. Either whitelist exactly what's needed (`--allowedTools`), or — for fully autonomous runs — use a sandboxed environment. Never `--dangerously-skip-permissions` on a machine you care about ([chapter 11](11-security-best-practices.md)).
 
